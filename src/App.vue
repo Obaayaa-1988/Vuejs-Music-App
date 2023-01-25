@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <header>
+      MY MUSIC
+    </header>
+    <main class="music-player">
+      <h2 class="song-title"> Test </h2>
+
+    </main>
     
   </div>
 </template>
