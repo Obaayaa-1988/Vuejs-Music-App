@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <header>
-      MY MUSIC
+      <h1> MY MUSIC</h1> 
     </header>
-    <main class="music-player">
-      <h2 class="song-title"> Test </h2>
+    <main>
+      <section class="music-player">
+        <h2 class="song-title"> Test </h2>
+
+      </section>
 
     </main>
     
@@ -23,12 +26,18 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  padding: 15px;
+  color: #fff;
 }
 </style>
