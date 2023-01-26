@@ -6,6 +6,7 @@
     <main>
       <section class="music-player">
         <h2 class="song-title"> {{ current.title }} </h2>
+        {{  songs[0].src }}
 
       </section>
 
