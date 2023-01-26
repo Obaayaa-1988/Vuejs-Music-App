@@ -27,7 +27,20 @@ export default {
     return{
       current:{
         title: "SONG TITLE"/**data for current song */
-      }
+      },
+
+      songs: [
+        {
+          title: 'Grateful',
+          artist: 'Neffex',
+          src: require('./assets/neffex-grateful.mp3')
+        },
+        {
+          title: 'Invincible',
+          artist: 'Def Kev',
+          src: require('./assets/deaf-kev-invincible.mp3')
+        },
+      ]
     }
   }
 
