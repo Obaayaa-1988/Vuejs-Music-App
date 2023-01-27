@@ -45,7 +45,13 @@ export default {
       ],
       player: new Audio(),
     }
+  },
+
+  created(){
+    this.current = this.songs[this.index];
+    this.player.src = this.current.src;
   }
+
 
 
 }
