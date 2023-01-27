@@ -27,9 +27,10 @@ export default {
   data(){
     return{
       current:{
-        title: "SONG TITLE"/**data for current song */
+        // title: "SONG TITLE"              /**data for current song */
       },
-
+      index: 0,
+      isPlaying: false,
       songs: [
         {
           title: 'Grateful',
@@ -41,7 +42,8 @@ export default {
           artist: 'Def Kev',
           src: require('./assets/deaf-kev-invincible.mp3')
         },
-      ]
+      ],
+      player: new Audio(),
     }
   }
 
