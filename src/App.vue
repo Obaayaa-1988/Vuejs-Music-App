@@ -4,9 +4,16 @@
       <h1> MY MUSIC</h1> 
     </header>
     <main>
-      <section class="music-player">
-        <h2 class="song-title"> {{ current.title }} </h2>
-        {{  songs[0].src }}
+      <section class="player">
+        <h2 class="song-title"> {{ current.title }} -<span>{{ current.artist }}</span></h2>
+        <!-- {{  songs[0].src }} -->
+        <div class="control"> 
+          <button class="prev">Prev</button>
+          <button class="play" v-if="!isPlaying">Play</button>
+          <button class="pause" v-else>Pause</button>
+          <button class="next">Next</button>
+
+        </div>
 
       </section>
 
@@ -50,10 +57,13 @@ export default {
   methods: {
     play(song){
       if(typeof song.src != "undefined"){
-        this.current = song
+        this.current = song;
 
         this.player.src= this.current.src;
       }
+
+      this.player.play();
+      this.isPlaying = true;
 
 
     },
