@@ -47,6 +47,19 @@ export default {
     }
   },
 
+  methods: {
+    play(song){
+      if(typeof song.src != "undefined"){
+        this.current = song
+
+        this.player.src= this.current.src;
+      }
+
+
+    },
+
+  },
+
   created(){
     this.current = this.songs[this.index];
     this.player.src = this.current.src;
