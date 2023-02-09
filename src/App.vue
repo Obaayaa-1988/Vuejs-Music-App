@@ -79,6 +79,15 @@ export default {
 
     },
 
+    next(){
+      this.index++;
+      if(this.index > this.songs.length -1){
+        this.index = 0;
+      }
+      this.current = this.songs[this.index];
+      this.play(this.current);
+    }
+
   },
 
   created(){
