@@ -11,7 +11,7 @@
           <button class="prev" @click="prev">Prev</button>
           <button class="play" v-if="!isPlaying">Play</button>
           <button class="pause" v-else @click="pause">Pause</button>
-          <button class="next">Next</button>
+          <button class="next" @click="next">Next</button>
 
         </div>
 
