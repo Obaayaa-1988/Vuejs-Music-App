@@ -82,6 +82,7 @@ export default {
 
     pause(){
       this.player.pause();
+      this.isPlaying = false;
 
     },
 
@@ -92,7 +93,9 @@ export default {
       }
       this.current = this.songs[this.index];
       this.play(this.current);
-    }
+    },
+
+    
 
   },
 
