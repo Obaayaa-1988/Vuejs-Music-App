@@ -75,7 +75,6 @@ export default {
 
       this.player.play();
       this.isPlaying = true;
-      this.isPlaying = false;
 
 
     },
