@@ -74,6 +74,17 @@ export default {
       }
 
       this.player.play();
+      this.player.addEventListener('ended', function( ){
+        this.index++;
+        if(this.index > this.songs - 1){
+          this.index = 0;
+
+        }
+
+        this.current = this.songs[this.index];
+        this.play(this.current)
+
+      }.bind(this))
       this.isPlaying = true;
 
 
@@ -132,5 +143,11 @@ header{
   background-color: #212121;
   padding: 15px;
   color: #fff;
+}
+main{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+
 }
 </style>
