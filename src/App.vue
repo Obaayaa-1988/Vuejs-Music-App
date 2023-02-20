@@ -7,7 +7,7 @@
       <section class="player">
         <h2 class="song-title"> {{ current.title }} -<span>{{ current.artist }}</span></h2>
         <!-- {{  songs[0].src }} -->
-        <div class="control"> 
+        <div class="controls"> 
           <button class="prev" @click="prev">Prev</button>
           <button class="play" v-if="!isPlaying">Play</button>
           <button class="pause" v-else @click="pause">Pause</button>
@@ -148,6 +148,27 @@ main{
   width: 100%;
   max-width: 760px;
   margin: 0 auto;
+  padding: 25px;
+  
+}
+
+.song-title{
+  font-size: 32px;
+  color: #53565A;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.song-title span{
+  font-weight: 400;
+  font-style: italic;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
 
 }
 </style>
