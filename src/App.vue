@@ -171,4 +171,11 @@ main{
   padding: 30px 15px;
 
 }
+.button{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 </style>
