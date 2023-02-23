@@ -177,5 +177,15 @@ main{
   border: none;
   outline: none;
   cursor: pointer;
+} 
+
+.play{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0px 15px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #CC2E5D;
 }
 </style>
