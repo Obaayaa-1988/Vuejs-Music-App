@@ -178,6 +178,9 @@ main{
   outline: none;
   cursor: pointer;
 } 
+button.hover{
+  opacity: 0.8;
+}
 
 .play{
   font-size: 20px;
@@ -188,4 +191,16 @@ main{
   color: #fff;
   background-color: #CC2E5D;
 }
+
+.next, .prev{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 10px 15px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #FF5858;
+
+}
+
 </style>
