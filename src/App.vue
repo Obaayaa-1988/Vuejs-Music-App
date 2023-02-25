@@ -168,6 +168,7 @@ main{
 .controls{
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px 15px;
 
 }
@@ -201,6 +202,23 @@ button.hover{
   color: #fff;
   background-color: #FF5858;
 
+}
+
+.playlist{
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.playlist.song{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 </style>
