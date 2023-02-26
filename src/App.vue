@@ -204,7 +204,7 @@ button.hover{
 
 }
 
-.playlist{
+.playlist h3{
   color: #212121;
   font-size: 28px;
   font-weight: 400;
@@ -219,6 +219,11 @@ button.hover{
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.playlist .song.playing{
+  color:#FFF;
+  background-image: linear-gradient(to right, #CC2E5D, #FF5858);
 }
 
 </style>
